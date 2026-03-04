@@ -1,0 +1,860 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jean Dupont",
+      "email": "jean.dupont@example.com",
+      "password": "password123",
+      "role": "client",
+      "phone": "+33612345678",
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Marie Martin",
+      "email": "marie.martin@example.com",
+      "password": "password123",
+      "role": "restaurateur",
+      "phone": "+33623456789",
+      "createdAt": "2024-01-16T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Pierre Dubois",
+      "email": "pierre.dubois@example.com",
+      "password": "password123",
+      "role": "livreur",
+      "phone": "+33634567890",
+      "vehicleType": "scooter",
+      "createdAt": "2024-01-17T08:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Sophie Laurent",
+      "email": "sophie.laurent@example.com",
+      "password": "password123",
+      "role": "client",
+      "phone": "+33645678901",
+      "createdAt": "2024-01-18T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Luc Bernard",
+      "email": "luc.bernard@example.com",
+      "password": "password123",
+      "role": "restaurateur",
+      "phone": "+33656789012",
+      "createdAt": "2024-01-19T10:00:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Emma Rousseau",
+      "email": "emma.rousseau@example.com",
+      "password": "password123",
+      "role": "restaurateur",
+      "phone": "+33667890123",
+      "createdAt": "2024-01-20T09:30:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Thomas Petit",
+      "email": "thomas.petit@example.com",
+      "password": "password123",
+      "role": "restaurateur",
+      "phone": "+33678901234",
+      "createdAt": "2024-01-21T11:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Claire Moreau",
+      "email": "claire.moreau@example.com",
+      "password": "password123",
+      "role": "restaurateur",
+      "phone": "+33689012345",
+      "createdAt": "2024-01-22T10:30:00Z"
+    },
+    {
+      "name": "parfait ",
+      "email": "parfait@gmail.com",
+      "password": "123456",
+      "role": "client",
+      "phone": "8194622826",
+      "vehicleType": "",
+      "createdAt": "2026-03-02T03:56:23.612Z",
+      "id": 9
+    },
+    {
+      "name": "kevin",
+      "email": "kevin@gmail.com",
+      "password": "123456",
+      "role": "restaurateur",
+      "phone": "8194622826",
+      "vehicleType": "",
+      "createdAt": "2026-03-02T03:57:06.876Z",
+      "id": 10
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Le Burger Gourmet",
+      "address": "123 Rue de Rivoli, 75001 Paris",
+      "category": "Burgers",
+      "description": "Les meilleurs burgers artisanaux de Paris. Viandes fraîches et ingrédients locaux de qualité supérieure.",
+      "logoUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=400",
+      "ownerId": 2,
+      "rating": 4.8,
+      "deliveryTime": "25-35 min",
+      "minimumOrder": 15,
+      "createdAt": "2024-01-20T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Pizza Napolitaine",
+      "address": "45 Boulevard Saint-Germain, 75005 Paris",
+      "category": "Pizza",
+      "description": "Pizzas authentiques cuites au feu de bois. Recettes traditionnelles italiennes transmises de génération en génération.",
+      "logoUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400",
+      "ownerId": 2,
+      "rating": 4.6,
+      "deliveryTime": "30-40 min",
+      "minimumOrder": 12,
+      "createdAt": "2024-01-21T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Sushi Tokyo",
+      "address": "78 Rue de la Paix, 75002 Paris",
+      "category": "Japonais",
+      "description": "Sushis frais préparés par des chefs japonais. Poissons de première qualité livrés quotidiennement.",
+      "logoUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400",
+      "ownerId": 5,
+      "rating": 4.9,
+      "deliveryTime": "20-30 min",
+      "minimumOrder": 25,
+      "createdAt": "2024-01-22T08:45:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Dragon d'Or",
+      "address": "156 Avenue de Choisy, 75013 Paris",
+      "category": "Chinois",
+      "description": "Cuisine chinoise authentique. Spécialités du Sichuan et de Canton préparées selon les traditions ancestrales.",
+      "logoUrl": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400",
+      "ownerId": 5,
+      "rating": 4.5,
+      "deliveryTime": "35-45 min",
+      "minimumOrder": 18,
+      "createdAt": "2024-01-23T09:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Taj Mahal",
+      "address": "89 Rue du Faubourg Saint-Denis, 75010 Paris",
+      "category": "Indien",
+      "description": "Saveurs épicées de l'Inde. Currys, tandooris et naans préparés dans notre four traditionnel.",
+      "logoUrl": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400",
+      "ownerId": 6,
+      "rating": 4.7,
+      "deliveryTime": "30-40 min",
+      "minimumOrder": 20,
+      "createdAt": "2024-01-24T10:15:00Z"
+    },
+    {
+      "id": 6,
+      "name": "La Trattoria",
+      "address": "34 Rue de la Roquette, 75011 Paris",
+      "category": "Italien",
+      "description": "Restaurant italien familial. Pâtes fraîches maison et risottos crémeux comme en Italie.",
+      "logoUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400",
+      "ownerId": 6,
+      "rating": 4.8,
+      "deliveryTime": "25-35 min",
+      "minimumOrder": 15,
+      "createdAt": "2024-01-25T11:30:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Le Bistrot Français",
+      "address": "12 Rue Cler, 75007 Paris",
+      "category": "Français",
+      "description": "Cuisine française traditionnelle. Bœuf bourguignon, coq au vin et autres classiques revisités.",
+      "logoUrl": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400",
+      "ownerId": 7,
+      "rating": 4.9,
+      "deliveryTime": "40-50 min",
+      "minimumOrder": 30,
+      "createdAt": "2024-01-26T09:45:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Taco Loco",
+      "address": "67 Rue Oberkampf, 75011 Paris",
+      "category": "Mexicain",
+      "description": "Tacos, burritos et quesadillas authentiques. Saveurs explosives du Mexique avec guacamole maison.",
+      "logoUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+      "ownerId": 7,
+      "rating": 4.4,
+      "deliveryTime": "20-30 min",
+      "minimumOrder": 12,
+      "createdAt": "2024-01-27T10:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Green & Fresh",
+      "address": "23 Rue des Martyrs, 75009 Paris",
+      "category": "Healthy",
+      "description": "Bowls végétariens et végan. Ingrédients bio et locaux pour une alimentation saine et savoureuse.",
+      "logoUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+      "ownerId": 8,
+      "rating": 4.6,
+      "deliveryTime": "15-25 min",
+      "minimumOrder": 10,
+      "createdAt": "2024-01-28T08:30:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Sweet Paradise",
+      "address": "45 Rue Montorgueil, 75002 Paris",
+      "category": "Desserts",
+      "description": "Pâtisserie artisanale. Gâteaux, tartes et macarons faits maison avec passion et savoir-faire.",
+      "logoUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400",
+      "ownerId": 8,
+      "rating": 4.9,
+      "deliveryTime": "20-30 min",
+      "minimumOrder": 8,
+      "createdAt": "2024-01-29T09:00:00Z"
+    },
+    {
+      "name": "La saveur africaine ",
+      "address": "1660 rue du père Marquette ",
+      "category": "Français",
+      "description": "venez découvrir les délice d'afrique",
+      "logoUrl": "https://media.istockphoto.com/id/1094435394/fr/photo/grand-choix-daliments-afrique-de-louest.webp?a=1&b=1&s=612x612&w=0&k=20&c=kAysgxCMwFllihLZawThshA7Z8LHCfWiwaza2Ywrg5Y=",
+      "deliveryTime": "30-45 min",
+      "minimumOrder": 2,
+      "ownerId": 7,
+      "rating": 0,
+      "createdAt": "2026-03-02T03:53:32.436Z",
+      "id": 11
+    },
+    {
+      "name": "le parisien",
+      "address": "78 Rue de la Paix, 75002 Paris",
+      "category": "Burgers",
+      "description": "spécialité des burger de paris",
+      "logoUrl": "https://media.istockphoto.com/id/851159308/fr/photo/gros-plan-des-hamburgers-faits-maison.webp?a=1&b=1&s=612x612&w=0&k=20&c=bO4thqfiyiZN63rBJwuIAT7cdQzqVvLLXt6whzmWhN4=",
+      "deliveryTime": "30-45 min",
+      "minimumOrder": 1,
+      "ownerId": 10,
+      "rating": 0,
+      "createdAt": "2026-03-02T03:58:03.596Z",
+      "id": 12
+    }
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "restaurantId": 1,
+      "name": "Classic Cheese Burger",
+      "description": "Burger emblématique avec steak de bœuf 180g, cheddar fondant, laitue croquante, tomates fraîches et sauce maison",
+      "price": 14.5,
+      "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+      "category": "Burgers",
+      "available": true,
+      "createdAt": "2024-01-30T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "name": "Bacon Deluxe Burger",
+      "description": "Double steak de bœuf, bacon croustillant, cheddar, oignons caramélisés et sauce BBQ fumée",
+      "price": 16.9,
+      "imageUrl": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400",
+      "category": "Burgers",
+      "available": true,
+      "createdAt": "2024-01-30T10:05:00Z"
+    },
+    {
+      "id": 3,
+      "restaurantId": 1,
+      "name": "Frites Maison XL",
+      "description": "Frites fraîches coupées à la main, cuites deux fois pour un croustillant parfait, sel de mer",
+      "price": 5.5,
+      "imageUrl": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400",
+      "category": "Accompagnements",
+      "available": true,
+      "createdAt": "2024-01-30T10:10:00Z"
+    },
+    {
+      "id": 4,
+      "restaurantId": 2,
+      "name": "Margherita Royale",
+      "description": "Pizza traditionnelle avec sauce tomate San Marzano, mozzarella di bufala AOP et basilic frais",
+      "price": 12,
+      "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400",
+      "category": "Pizzas",
+      "available": true,
+      "createdAt": "2024-01-30T11:00:00Z"
+    },
+    {
+      "id": 5,
+      "restaurantId": 2,
+      "name": "Quattro Formaggi",
+      "description": "Alliance parfaite de mozzarella, gorgonzola doux, parmesan affiné et chèvre crémeux",
+      "price": 14.5,
+      "imageUrl": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400",
+      "category": "Pizzas",
+      "available": true,
+      "createdAt": "2024-01-30T11:05:00Z"
+    },
+    {
+      "id": 6,
+      "restaurantId": 2,
+      "name": "Calzone Napolitain",
+      "description": "Pizza fermée garnie de jambon italien, ricotta crémeuse, mozzarella et champignons frais",
+      "price": 13.5,
+      "imageUrl": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400",
+      "category": "Pizzas",
+      "available": true,
+      "createdAt": "2024-01-30T11:10:00Z"
+    },
+    {
+      "id": 7,
+      "restaurantId": 3,
+      "name": "Mix Signature",
+      "description": "Assortiment de 18 pièces : 6 sushis saumon, 6 sushis thon, 6 sushis daurade, wasabi et gingembre",
+      "price": 28,
+      "imageUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400",
+      "category": "Sushis",
+      "available": true,
+      "createdAt": "2024-01-30T12:00:00Z"
+    },
+    {
+      "id": 8,
+      "restaurantId": 3,
+      "name": "California Roll",
+      "description": "8 pièces de maki inversé avec avocat crémeux, surimi, concombre croquant et sésame grillé",
+      "price": 12.5,
+      "imageUrl": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=400",
+      "category": "Makis",
+      "available": true,
+      "createdAt": "2024-01-30T12:05:00Z"
+    },
+    {
+      "id": 9,
+      "restaurantId": 3,
+      "name": "Sashimi Deluxe",
+      "description": "Sélection de poissons crus : 3 tranches de saumon, 3 de thon rouge, 3 de daurade royale",
+      "price": 24,
+      "imageUrl": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=400",
+      "category": "Sashimi",
+      "available": true,
+      "createdAt": "2024-01-30T12:10:00Z"
+    },
+    {
+      "id": 10,
+      "restaurantId": 4,
+      "name": "Poulet Kung Pao",
+      "description": "Poulet sauté aux cacahuètes, piments séchés, légumes croquants dans une sauce aigre-douce épicée",
+      "price": 15.5,
+      "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T13:00:00Z"
+    },
+    {
+      "id": 11,
+      "restaurantId": 4,
+      "name": "Boeuf aux oignons",
+      "description": "Émincé de bœuf tendre sauté avec oignons blancs, sauce soja et gingembre frais",
+      "price": 17,
+      "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T13:05:00Z"
+    },
+    {
+      "id": 12,
+      "restaurantId": 4,
+      "name": "Nouilles sautées aux légumes",
+      "description": "Nouilles chinoises sautées au wok avec légumes de saison, germes de soja et sauce soja",
+      "price": 11.5,
+      "imageUrl": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400",
+      "category": "Nouilles",
+      "available": true,
+      "createdAt": "2024-01-30T13:10:00Z"
+    },
+    {
+      "id": 13,
+      "restaurantId": 5,
+      "name": "Chicken Tikka Masala",
+      "description": "Poulet mariné aux épices, cuit au tandoor et mijoté dans une sauce crémeuse aux tomates",
+      "price": 16,
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T14:00:00Z"
+    },
+    {
+      "id": 14,
+      "restaurantId": 5,
+      "name": "Palak Paneer",
+      "description": "Fromage indien dans une sauce aux épinards, ail, gingembre et épices douces",
+      "price": 14.5,
+      "imageUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T14:05:00Z"
+    },
+    {
+      "id": 15,
+      "restaurantId": 5,
+      "name": "Naan Cheese",
+      "description": "Pain indien cuit au four tandoor, garni de fromage fondant et beurre à l'ail",
+      "price": 4.5,
+      "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400",
+      "category": "Accompagnements",
+      "available": true,
+      "createdAt": "2024-01-30T14:10:00Z"
+    },
+    {
+      "id": 16,
+      "restaurantId": 6,
+      "name": "Spaghetti Carbonara",
+      "description": "Pâtes fraîches, pancetta croustillante, œufs fermiers, pecorino romano et poivre noir",
+      "price": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400",
+      "category": "Pâtes",
+      "available": true,
+      "createdAt": "2024-01-30T15:00:00Z"
+    },
+    {
+      "id": 17,
+      "restaurantId": 6,
+      "name": "Risotto aux champignons",
+      "description": "Riz carnaroli crémeux, champignons porcini, parmesan et truffe blanche",
+      "price": 16.5,
+      "imageUrl": "https://images.unsplash.com/photo-1476124369491-c7addf32c542?w=400",
+      "category": "Risotto",
+      "available": true,
+      "createdAt": "2024-01-30T15:05:00Z"
+    },
+    {
+      "id": 18,
+      "restaurantId": 6,
+      "name": "Tiramisu Classico",
+      "description": "Dessert italien traditionnel : biscuits imbibés de café, mascarpone onctueux et cacao",
+      "price": 7.5,
+      "imageUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400",
+      "category": "Desserts",
+      "available": true,
+      "createdAt": "2024-01-30T15:10:00Z"
+    },
+    {
+      "id": 19,
+      "restaurantId": 7,
+      "name": "Boeuf Bourguignon",
+      "description": "Joue de bœuf confite 6h dans vin rouge de Bourgogne, lardons, champignons et petits oignons",
+      "price": 22,
+      "imageUrl": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T16:00:00Z"
+    },
+    {
+      "id": 20,
+      "restaurantId": 7,
+      "name": "Coq au Vin",
+      "description": "Poulet fermier mijoté au vin rouge, lardons fumés, champignons de Paris et échalotes",
+      "price": 19.5,
+      "imageUrl": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400",
+      "category": "Plats principaux",
+      "available": true,
+      "createdAt": "2024-01-30T16:05:00Z"
+    },
+    {
+      "id": 21,
+      "restaurantId": 7,
+      "name": "Crème Brûlée",
+      "description": "Crème vanille Madagascar onctueuse sous une croûte de sucre caramélisé craquant",
+      "price": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=400",
+      "category": "Desserts",
+      "available": true,
+      "createdAt": "2024-01-30T16:10:00Z"
+    },
+    {
+      "id": 22,
+      "restaurantId": 8,
+      "name": "Tacos al Pastor",
+      "description": "3 tacos de porc mariné aux épices, ananas grillé, coriandre fraîche et oignon rouge",
+      "price": 13.5,
+      "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400",
+      "category": "Tacos",
+      "available": true,
+      "createdAt": "2024-01-30T17:00:00Z"
+    },
+    {
+      "id": 23,
+      "restaurantId": 8,
+      "name": "Burrito Carnitas",
+      "description": "Tortilla XXL garnie de porc effiloché, riz, haricots noirs, fromage, guacamole et salsa",
+      "price": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400",
+      "category": "Burritos",
+      "available": true,
+      "createdAt": "2024-01-30T17:05:00Z"
+    },
+    {
+      "id": 24,
+      "restaurantId": 8,
+      "name": "Nachos Supreme",
+      "description": "Tortillas croustillantes, cheddar fondu, viande hachée épicée, jalapeños, crème et guacamole",
+      "price": 11.5,
+      "imageUrl": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=400",
+      "category": "Entrées",
+      "available": true,
+      "createdAt": "2024-01-30T17:10:00Z"
+    },
+    {
+      "id": 25,
+      "restaurantId": 9,
+      "name": "Buddha Bowl Végétarien",
+      "description": "Quinoa, avocat, patate douce rôtie, edamame, chou rouge, graines et tahini maison",
+      "price": 13.5,
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+      "category": "Bowls",
+      "available": true,
+      "createdAt": "2024-01-30T18:00:00Z"
+    },
+    {
+      "id": 26,
+      "restaurantId": 9,
+      "name": "Poke Bowl Saumon",
+      "description": "Riz sushi, saumon mariné, avocat, edamame, concombre, algues wakame et sauce ponzu",
+      "price": 15.5,
+      "imageUrl": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=400",
+      "category": "Bowls",
+      "available": true,
+      "createdAt": "2024-01-30T18:05:00Z"
+    },
+    {
+      "id": 27,
+      "restaurantId": 9,
+      "name": "Smoothie Détox",
+      "description": "Épinards, kiwi, banane, spiruline, lait d'amande et graines de chia",
+      "price": 6.5,
+      "imageUrl": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400",
+      "category": "Boissons",
+      "available": true,
+      "createdAt": "2024-01-30T18:10:00Z"
+    },
+    {
+      "id": 28,
+      "restaurantId": 10,
+      "name": "Tarte Tatin",
+      "description": "Pommes caramélisées sur pâte feuilletée croustillante, servie tiède avec crème fraîche",
+      "price": 8.5,
+      "imageUrl": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400",
+      "category": "Tartes",
+      "available": true,
+      "createdAt": "2024-01-30T19:00:00Z"
+    },
+    {
+      "id": 29,
+      "restaurantId": 10,
+      "name": "Éclair au Chocolat",
+      "description": "Pâte à choux légère, crème pâtissière au chocolat noir 70% et glaçage brillant",
+      "price": 5.5,
+      "imageUrl": "https://images.unsplash.com/photo-1593424718424-cf4d83f3def1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fERlc3NlcnRzfGVufDB8fDB8fHww",
+      "category": "Pâtisserie",
+      "available": true,
+      "createdAt": "2024-01-30T19:05:00Z"
+    },
+    {
+      "id": 30,
+      "restaurantId": 10,
+      "name": "Macarons Assortis",
+      "description": "Boîte de 6 macarons : vanille, chocolat, pistache, framboise, citron et caramel beurre salé",
+      "price": 12,
+      "imageUrl": "https://media.istockphoto.com/id/1091703928/fr/photo/macarons-de-diff%C3%A9rentes-couleurs-pr%C3%A9sent%C3%A9s-sur-fond-blanc.webp?a=1&b=1&s=612x612&w=0&k=20&c=ydFfnmacuzq5X34ZVoC2dlMxpuoO3v4U5g1zwi4p04s=",
+      "category": "Pâtisserie",
+      "available": true,
+      "createdAt": "2024-01-30T19:10:00Z"
+    },
+    {
+      "name": "ERU",
+      "description": "spécialité camerounaise .",
+      "price": 10,
+      "category": "Plats principaux",
+      "imageUrl": "https://media.istockphoto.com/id/1399461342/fr/photo/cuisine-camerounaise-fufu-eru-et-garri.webp?a=1&b=1&s=612x612&w=0&k=20&c=x390J0A2KleO1OiMAgrtGXACTNUlsbmq3y5GQHQMeb8=",
+      "available": true,
+      "restaurantId": 7,
+      "createdAt": "2026-03-02T03:54:39.043Z",
+      "id": 31
+    },
+    {
+      "name": "buger hot",
+      "description": "super buger de paris",
+      "price": 5,
+      "category": "Burgers",
+      "imageUrl": "https://media.istockphoto.com/id/2206834241/photo/beautifully-served-burger-and-fries-on-a-wooden-board-on-the-restaurant-table.jpg?s=612x612&w=0&k=20&c=MndfvkkNuBGHRyrILeQh-BE2pWCxIj9iXsh04stL2WU=",
+      "available": true,
+      "restaurantId": 12,
+      "createdAt": "2026-03-02T03:58:52.819Z",
+      "id": 32
+    },
+    {
+      "name": "pasta magarita",
+      "description": "spécialister locale",
+      "price": 10,
+      "category": "Sushis",
+      "imageUrl": "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhc3RhfGVufDB8fDB8fHww",
+      "available": true,
+      "restaurantId": 12,
+      "createdAt": "2026-03-02T21:18:30.144Z",
+      "id": 33
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "restaurantId": 1,
+      "items": [
+        {
+          "dishId": 1,
+          "dishName": "Le Classic Cheese Burger",
+          "quantity": 2,
+          "price": 14.5
+        },
+        {
+          "dishId": 3,
+          "dishName": "Frites Maison XL",
+          "quantity": 1,
+          "price": 5.5
+        }
+      ],
+      "totalPrice": 34.5,
+      "deliveryAddress": {
+        "street": "12 Rue de Rivoli",
+        "city": "Paris",
+        "postalCode": "75001",
+        "instructions": "Sonner à l'interphone, 2ème étage"
+      },
+      "status": "delivered",
+      "deliveryPersonId": 3,
+      "createdAt": "2024-02-01T12:30:00Z",
+      "updatedAt": "2024-02-01T13:15:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "restaurantId": 2,
+      "items": [
+        {
+          "dishId": 4,
+          "dishName": "Margherita Royale",
+          "quantity": 1,
+          "price": 12
+        },
+        {
+          "dishId": 5,
+          "dishName": "Quattro Formaggi",
+          "quantity": 1,
+          "price": 14.5
+        }
+      ],
+      "totalPrice": 26.5,
+      "deliveryAddress": {
+        "street": "45 Avenue des Champs-Élysées",
+        "city": "Paris",
+        "postalCode": "75008",
+        "instructions": "Laisser au gardien si absent"
+      },
+      "status": "delivered",
+      "deliveryPersonId": 3,
+      "createdAt": "2024-02-04T19:00:00Z",
+      "updatedAt": "2024-02-04T20:00:00Z"
+    },
+    {
+      "restaurantId": 7,
+      "items": [
+        {
+          "dishId": 20,
+          "dishName": "Coq au Vin",
+          "quantity": 1,
+          "price": 19.5
+        }
+      ],
+      "totalPrice": 19.5,
+      "deliveryAddress": {
+        "street": "2910 rue Arthur guimont",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12344",
+        "instructions": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+      },
+      "status": "cancelled",
+      "createdAt": "2026-03-02T05:52:22.318Z",
+      "userId": 9,
+      "id": 3,
+      "updatedAt": "2026-03-02T06:20:27.565Z"
+    },
+    {
+      "restaurantId": 1,
+      "items": [
+        {
+          "dishId": 2,
+          "dishName": "Bacon Deluxe Burger",
+          "quantity": 1,
+          "price": 16.9
+        }
+      ],
+      "totalPrice": 16.9,
+      "deliveryAddress": {
+        "street": "1660 rue père Marquette appartement 3",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12345",
+        "instructions": ""
+      },
+      "status": "delivered",
+      "createdAt": "2026-03-02T06:24:13.999Z",
+      "userId": 9,
+      "id": 4
+    },
+    {
+      "restaurantId": 3,
+      "items": [
+        {
+          "dishId": 7,
+          "dishName": "Mix Signature",
+          "quantity": 1,
+          "price": 28
+        }
+      ],
+      "totalPrice": 28,
+      "deliveryAddress": {
+        "street": "1660 rue père Marquette appartement 3",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12345",
+        "instructions": ""
+      },
+      "status": "cancelled",
+      "createdAt": "2026-03-02T19:10:36.777Z",
+      "userId": 9,
+      "id": 5,
+      "updatedAt": "2026-03-02T19:12:23.950Z"
+    },
+    {
+      "restaurantId": 3,
+      "items": [
+        {
+          "dishId": 7,
+          "dishName": "Mix Signature",
+          "quantity": 1,
+          "price": 28
+        }
+      ],
+      "totalPrice": 28,
+      "deliveryAddress": {
+        "street": "Trois-Rivières, QC",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12345",
+        "instructions": ""
+      },
+      "status": "pending",
+      "createdAt": "2026-03-02T19:24:00.118Z",
+      "userId": 9,
+      "id": 6
+    },
+    {
+      "restaurantId": 7,
+      "items": [
+        {
+          "dishId": 19,
+          "dishName": "Boeuf Bourguignon",
+          "quantity": 1,
+          "price": 22
+        }
+      ],
+      "totalPrice": 22,
+      "deliveryAddress": {
+        "street": "Trois-Rivières, QC",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12345",
+        "instructions": ""
+      },
+      "status": "delivered",
+      "createdAt": "2026-03-02T19:35:37.333Z",
+      "userId": 9,
+      "id": 7,
+      "updatedAt": "2026-03-02T19:35:49.401Z"
+    },
+    {
+      "restaurantId": 12,
+      "items": [
+        {
+          "dishId": 32,
+          "dishName": "buger hot",
+          "quantity": 1,
+          "price": 5
+        }
+      ],
+      "totalPrice": 5,
+      "deliveryAddress": {
+        "street": "Trois-Rivières, QC",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "12345",
+        "instructions": ""
+      },
+      "status": "delivered",
+      "createdAt": "2026-03-02T19:57:50.267Z",
+      "userId": 9,
+      "id": 8,
+      "updatedAt": "2026-03-02T19:58:02.313Z"
+    },
+    {
+      "restaurantId": 7,
+      "items": [
+        {
+          "dishId": 31,
+          "dishName": "ERU",
+          "quantity": 1,
+          "price": 10
+        }
+      ],
+      "totalPrice": 10,
+      "deliveryAddress": {
+        "street": "Trois-Rivières, QC",
+        "city": "Trois-Rivières, QC",
+        "postalCode": "G8Z 4N6",
+        "instructions": ""
+      },
+      "status": "delivered",
+      "createdAt": "2026-03-03T20:40:04.603Z",
+      "userId": 9,
+      "id": 9,
+      "updatedAt": "2026-03-03T20:40:16.659Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "deliveryPersonId": 3,
+      "status": "completed",
+      "pickupTime": "2024-02-01T12:50:00Z",
+      "deliveryTime": "2024-02-01T13:15:00Z"
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "deliveryPersonId": 3,
+      "status": "completed",
+      "pickupTime": "2024-02-04T19:25:00Z",
+      "deliveryTime": "2024-02-04T20:00:00Z"
+    }
+  ],
+  "deliveryAddresses": []
+}
